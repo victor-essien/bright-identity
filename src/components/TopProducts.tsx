@@ -4,33 +4,32 @@ import { Link } from "react-router-dom";
 const products = [
   {
     id: 1,
-    name: "Custom T-Shirt",
+    name: "Classic T-Shirt",
     price: "$19.99",
-    image: "/shirt-templates/hero-shirt.png",
+    image: "/src/assets/topproducts/t-shirt.jpg",
     customizeLink: "/customize?product=tshirt",
   },
   {
     id: 2,
-    name: "Personalized Mug",
-    price: "$12.99",
-    image: "/images/mug.png",
-    customizeLink: "/customize?product=mug",
+    name: "Custom Tote Bag",
+    price: "$15.99",
+    image: "/src/assets/topproducts/tote-bag.jpg",
+    customizeLink: "/customize?product=tote",
   },
   {
     id: 3,
-    name: "Sticker Pack",
-    price: "$7.99",
-    image: "/images/sticker.png",
-    customizeLink: "/customize?product=sticker",
+    name: "Premium Shirt (Photo)",
+    price: "$22.99",
+    image: "/src/assets/topproducts/PXL_20250610_084721813.jpg",
+    customizeLink: "/customize?product=premiumshirt",
   },
-  // Add a fourth product if desired
-  // {
-  //   id: 4,
-  //   name: "Custom Tote Bag",
-  //   price: "$15.99",
-  //   image: "/images/tote.png",
-  //   customizeLink: "/customize?product=tote",
-  // },
+  {
+    id: 4,
+    name: "Eco Shirt (Photo)",
+    price: "$21.99",
+    image: "/src/assets/topproducts/PXL_20250610_084915436.jpg",
+    customizeLink: "/customize?product=ecoshirt",
+  },
 ];
 
 const TopProducts: React.FC = () => {
@@ -53,7 +52,7 @@ const TopProducts: React.FC = () => {
               <img
                 src={product.image}
                 alt={product.name}
-                className="w-40 h-40 object-contain mb-4 rounded-xl bg-white shadow"
+                className="w-40 h-40 object-contain mb-4 rounded-xl  shadow"
               />
               <h3 className="text-xl font-bold text-gray-800 mb-2">
                 {product.name}
