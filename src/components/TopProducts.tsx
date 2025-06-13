@@ -1,33 +1,37 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import TshirtImg from '../assets/topproducts/tshirt.png';
+import ToteImg from '../assets/topproducts/tote.png';
+import CustoImg from '../assets/topproducts/custo.png';
+
 
 const products = [
   {
     id: 1,
     name: "Classic T-Shirt",
     price: "$19.99",
-    image: "/src/assets/topproducts/tshirt.png",
+    image: TshirtImg,
     customizeLink: "/customize?product=tshirt",
   },
   {
     id: 2,
     name: "Custom Tote Bag",
     price: "$15.99",
-    image: "/src/assets/topproducts/tote.png",
+    image:ToteImg,
     customizeLink: "/customize?product=tote",
   },
   {
     id: 3,
     name: "Premium Shirt (Photo)",
     price: "$22.99",
-    image: "/src/assets/topproducts/custo.png",
+    image: CustoImg,
     customizeLink: "/customize?product=premiumshirt",
   },
   {
     id: 4,
     name: "Eco Shirt (Photo)",
     price: "$21.99",
-    image: "/src/assets/topproducts/tote.png",
+    image: ToteImg,
     customizeLink: "/customize?product=ecoshirt",
   },
 ];
