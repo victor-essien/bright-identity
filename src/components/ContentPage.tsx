@@ -21,11 +21,11 @@ const ContactPage = () => {
     setFormData({ ...formData, name: "", email: "", message: "" });
   };
 
-  const handleNewsletterSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    alert("Subscribed to newsletter!");
-    setFormData({ ...formData, newsletterEmail: "" });
-  };
+  // const handleNewsletterSubmit = (e: React.FormEvent) => {
+  //   e.preventDefault();
+  //   alert("Subscribed to newsletter!");
+  //   setFormData({ ...formData, newsletterEmail: "" });
+  // };
 
   return (
     <section className="py-20 px-4 bg-gradient-to-br from-orange-50 via-white to-gray-100 min-h-screen">
