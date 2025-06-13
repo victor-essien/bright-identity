@@ -6,28 +6,28 @@ const products = [
     id: 1,
     name: "Classic T-Shirt",
     price: "$19.99",
-    image: "/src/assets/topproducts/t-shirt.jpg",
+    image: "/src/assets/topproducts/tshirt.png",
     customizeLink: "/customize?product=tshirt",
   },
   {
     id: 2,
     name: "Custom Tote Bag",
     price: "$15.99",
-    image: "/src/assets/topproducts/tote-bag.jpg",
+    image: "/src/assets/topproducts/tote.png",
     customizeLink: "/customize?product=tote",
   },
   {
     id: 3,
     name: "Premium Shirt (Photo)",
     price: "$22.99",
-    image: "/src/assets/topproducts/PXL_20250610_084721813.jpg",
+    image: "/src/assets/topproducts/custo.png",
     customizeLink: "/customize?product=premiumshirt",
   },
   {
     id: 4,
     name: "Eco Shirt (Photo)",
     price: "$21.99",
-    image: "/src/assets/topproducts/PXL_20250610_084915436.jpg",
+    image: "/src/assets/topproducts/tote.png",
     customizeLink: "/customize?product=ecoshirt",
   },
 ];
@@ -47,7 +47,7 @@ const TopProducts: React.FC = () => {
           {products.map((product) => (
             <div
               key={product.id}
-              className=" rounded-2xl shadow hover:shadow-lg transition p-6 flex flex-col items-center text-center w-full max-w-xs sm:max-w-sm md:max-w-md"
+              className=" rounded-2xl shadow hover:shadow-lg  bg-gray-200 transition p-6 flex flex-col items-center text-center w-full max-w-xs sm:max-w-sm md:max-w-md"
             >
               <img
                 src={product.image}
