@@ -25,21 +25,21 @@ return (
         <Link to="/" className="hover:text-orange-500 transition">
           Home
         </Link>
-        <Link to="/shop" className="hover:text-orange-500 transition">
+        <p  className="hover:text-orange-500 transition">
           Shop
-        </Link>
+        </p>
         <Link to="/customize" className="hover:text-orange-500 transition">
           Customize
         </Link>
-        <Link to="/gallery" className="hover:text-orange-500 transition">
+        {/* <Link to="/gallery" className="hover:text-orange-500 transition">
           Gallery
-        </Link>
+        </Link> */}
         <Link to="/about" className="hover:text-orange-500 transition">
           About
         </Link>
-        <Link to="/contact" className="hover:text-orange-500 transition">
+        <p  className="hover:text-orange-500 transition">
           Contact
-        </Link>
+        </p>
       </nav>
       {/* Cart Icon */}
       <div className="flex flex-row gap-2 justify-center items-center">
