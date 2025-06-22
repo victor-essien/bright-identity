@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSC 206</title>
+</head>
+<body style="font-family: Arial, sans-serif; margin: 40px; line-height: 1.6; background-color: #f9f9f9; color: #333;">
+
+  <div style="text-align: center;">
+    <h1 style="color: #2c3e50;">CSC 206</h1>
+    <p><strong>NAME:</strong> John Doe</p>
+    <p><strong>MATRIC NO:</strong> CSC/2021/1234</p>
+    <p><strong>DEPARTMENT:</strong> Computer Science</p>
+  </div>
+
+  <hr style="margin: 40px 0;">
+
+  <div style="max-width: 1000px; margin: auto;">
+
+    <h2>Lab 1 - System Diagnostics</h2>
+    <h3>Steps to Access Device Manager:</h3>
+    <ul>
+      <li>Press Windows + X or right-click on the Start menu.</li>
+      <li>Click on Device Manager.</li>
+      <li>You will see categories like Display Adapters, Processors, Network Adapters, and Sound devices.</li>
+      <li>Expand each category to view specific device information.</li>
+      <li>Right-click a device to update, disable, uninstall, or view properties.</li>
+    </ul>
+
+    <h3>Steps to Access Task Manager:</h3>
+    <ul>
+      <li>Press Ctrl + Shift + Esc or Ctrl + Alt + Del → Task Manager.</li>
+      <li>Go to the Performance tab to view CPU, RAM, disk, GPU, and network usage.</li>
+    </ul>
+
+    <h3>Steps to Access Event Viewer:</h3>
+    <ul>
+      <li>Press Windows + R → Type <code>eventvwr.msc</code> → Press Enter.</li>
+      <li>Expand Windows Logs: System, Application, and Security.</li>
+      <li>Click entries to view their details and use filters to refine your search.</li>
+    </ul>
+
+    <h3>Questions Answered:</h3>
+    <ul>
+      <li><strong>CPU vs GPU:</strong> CPU handles general-purpose tasks, while GPU handles parallel and graphic-intensive tasks.</li>
+      <li><strong>Internet vs Ethernet:</strong> Internet is the global network; Ethernet is the local wired connection.</li>
+      <li><strong>Unix vs Linux:</strong> Unix is proprietary; Linux is open-source and Unix-like.</li>
+      <li><strong>Unix Distribution:</strong> A complete OS built around the Unix/Linux kernel with user tools (e.g., Ubuntu, Fedora).</li>
+    </ul>
+
+    <h2>Lab 2 – Installing VirtualBox and Windows VM</h2>
+    <h3>Installing VirtualBox:</h3>
+    <ul>
+      <li>Go to <a href="https://www.virtualbox.org">virtualbox.org</a>.</li>
+      <li>Download for Windows and follow install prompts.</li>
+    </ul>
+
+    <h3>Installing a Windows VM:</h3>
+    <ul>
+      <li>Click New → Name VM → Choose Windows 10.</li>
+      <li>Assign RAM and create a virtual hard disk (20GB+).</li>
+      <li>Attach Windows ISO and start VM.</li>
+      <li>Complete Windows setup as usual.</li>
+    </ul>
+
+    <h3>Adding Another Drive & File Systems:</h3>
+    <ol>
+      <li>In VM settings → Storage → Add new VDI hard disk (dynamically allocated, e.g. 10GB).</li>
+      <li>Start Windows VM → Go to Disk Management → Initialize the new disk.</li>
+      <li>Create a new partition, assign a drive letter, and format (e.g., NTFS).</li>
+    </ol>
+
+    <h4>File System Types:</h4>
+    <ul>
+      <li><strong>Windows:</strong> NTFS, FAT32, exFAT</li>
+      <li><strong>Linux:</strong> ext4, XFS, Btrfs</li>
+    </ul>
+
+    <h4>NTFS vs FAT32:</h4>
+    <table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse;">
+      <tr><th>Feature</th><th>NTFS</th><th>FAT32</th></tr>
+      <tr><td>Max File Size</td><td>>16TB</td><td>4GB</td></tr>
+      <tr><td>Max Volume Size</td><td>256TB</td><td>2TB</td></tr>
+      <tr><td>File Security</td><td>Yes</td><td>No</td></tr>
+      <tr><td>Compatibility</td><td>Mostly Windows</td><td>Universal</td></tr>
+      <tr><td>Best Use Case</td><td>OS drives</td><td>USB/Memory cards</td></tr>
+    </table>
+
+    <h2>Lab 3 – Installing Ubuntu in VirtualBox</h2>
+    <ul>
+      <li>Download Ubuntu ISO.</li>
+      <li>In VirtualBox → New VM → Linux → Ubuntu (64-bit).</li>
+      <li>Assign RAM (2GB+), create 20GB+ disk, attach ISO, and start VM.</li>
+      <li>Install Ubuntu following the guided setup.</li>
+    </ul>
+
+    <h2>Lab 4 – Ubuntu Terminal Commands</h2>
+    <table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse;">
+      <tr><th>Command</th><th>Description</th><th>Output</th></tr>
+      <tr><td>pwd</td><td>Show current working directory</td><td>/home/user</td></tr>
+      <tr><td>ls</td><td>List files</td><td>Documents Downloads</td></tr>
+      <tr><td>cd</td><td>Change directory</td><td>To specified folder</td></tr>
+      <tr><td>mkdir myfolder</td><td>Create folder</td><td>myfolder created</td></tr>
+      <tr><td>touch file.txt</td><td>Create file</td><td>file.txt created</td></tr>
+      <tr><td>rm file.txt</td><td>Delete file</td><td>file.txt deleted</td></tr>
+      <tr><td>rmdir myfolder</td><td>Remove empty folder</td><td>myfolder deleted</td></tr>
+      <tr><td>cp a.txt b.txt</td><td>Copy file</td><td>b.txt created</td></tr>
+      <tr><td>mv old.txt new.txt</td><td>Rename/move file</td><td>new.txt created</td></tr>
+      <tr><td>cat file.txt</td><td>Show file content</td><td>Text displayed</td></tr>
+      <tr><td>nano file.txt</td><td>Edit file</td><td>Opens nano editor</td></tr>
+      <tr><td>sudo</td><td>Run as admin</td><td>Grants privileges</td></tr>
+      <tr><td>apt update</td><td>Update packages</td><td>Sources refreshed</td></tr>
+      <tr><td>apt install apache2</td><td>Install Apache</td><td>Apache installed</td></tr>
+      <tr><td>clear</td><td>Clear screen</td><td>Screen cleared</td></tr>
+      <tr><td>df -h</td><td>Disk space</td><td>Usage info</td></tr>
+      <tr><td>free -h</td><td>Memory usage</td><td>RAM info</td></tr>
+      <tr><td>uname -a</td><td>System info</td><td>Linux kernel info</td></tr>
+      <tr><td>whoami</td><td>Current user</td><td>user</td></tr>
+      <tr><td>ip a</td><td>Network info</td><td>IP address</td></tr>
+    </table>
+
+    <h2>Lab 5 – Apache Web Server and Samba File Sharing</h2>
+    <h3>Apache Web Server:</h3>
+    <ul>
+      <li>Install Apache: <code>sudo apt install apache2</code></li>
+      <li>Start: <code>sudo systemctl start apache2</code></li>
+      <li>Test: Go to <code>http://localhost</code></li>
+      <li>Default directory: <code>/var/www/html</code></li>
+    </ul>
+
+    <h3>Samba File Sharing:</h3>
+    <ol>
+      <li>Install Samba: <code>sudo apt install samba</code></li>
+      <li>Create folder: <code>mkdir /home/user/shared</code></li>
+      <li>Edit config file: <code>/etc/samba/smb.conf</code></li>
+      <li>Add:
+        <pre>
+[SharedFolder]
+path = /home/user/shared
+read only = no
+browsable = yes
+        </pre>
+      </li>
+      <li>Set password: <code>sudo smbpasswd -a user</code></li>
+      <li>Restart Samba: <code>sudo systemctl restart smbd</code></li>
+    </ol>
+
+    <h2>Lab 6 – Concurrency</h2>
+    <p>Concurrency allows multiple tasks to progress at once, improving system responsiveness.</p>
+
+    <h3>Real-life Example:</h3>
+    <ul>
+      <li>Multiple tabs open in a browser.</li>
+      <li>Typing in Word while downloading a file.</li>
+    </ul>
+
+    <h3>Demo:</h3>
+    <ul>
+      <li>Open terminal and run: <code>ping google.com</code></li>
+      <li>Open another terminal: <code>top</code></li>
+      <li>Open Firefox and browse the web simultaneously.</li>
+    </ul>
+
+    <h3>Concept:</h3>
+    <ul>
+      <li><strong>Concurrency:</strong> Tasks appear simultaneous via context switching.</li>
+      <li><strong>Parallelism:</strong> Tasks run truly simultaneously on multi-core CPUs.</li>
+    </ul>
+
+  </div>
+</body>
+</html>
